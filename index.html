@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <img src="./img/logo.png" alt="logo starbucks" class="logo">
+    <div class="content">
+        <div class="text-box">
+            <h2>It's not just a Coffee, It's <span>Starbucks</span></h2>
+            <p>Nullam non nibh luctus, tincidunt est sit amet, porta felis. Vivamus sit amet tristique ipsum. Curabitur
+                id
+                quam
+                tellus. Morbi in cursus sem. Nam ornare mauris ut erat dictum aliquet. Proin commodo laoreet nibh et
+                luctus.
+                Nam
+                sapien est, iaculis sed consequat at, fringilla et erat. Proin dui magna, vulputate nec sapien nec,
+                iaculis
+                finibus quam. Maecenas nec risus dolor.</p>
+            <button>Saiba mais</button>
+        </div>
+        <div class="img-box">
+            <img src="./img/img1.png" alt="copo starbucks" class="big-cup starbucks">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./img/img-pequena1.png" alt="matcha frappuccino" class="small-cup greenCup">
+        <img src="./img/img-pequena2.png" alt="sakura frappuccino" class="small-cup lightPinkCup">
+        <img src="./img/img-pequena3.png" alt="unicorn frappuccino" class="small-cup pinkCup">
+    </div>
+
+</body>
+<script>
+    let circle = document.querySelector(".circle")
+    let imgCup = document.querySelector(".starbucks")
+    let greenCup = document.querySelector(".greenCup")
+    let lightPinkCup = document.querySelector(".lightPinkCup")
+    let pinkCup = document.querySelector(".pinkCup")
+
+    greenCup.addEventListener("click", () => {
+        imgCup.src = "./img/img1.png"
+        circle.style.background = "#017143"
+    })
+
+    lightPinkCup.addEventListener("click", () => {
+        imgCup.src = "./img/img2.png"
+        circle.style.background = "#eb7495"
+    })
+
+    pinkCup.addEventListener("click", () => {
+        imgCup.src = "./img/img3.png"
+        circle.style.background = "#d752b1"
+    })
+</script>
+
+</html>

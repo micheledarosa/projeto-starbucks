@@ -1,0 +1,93 @@
+* {
+    /* fazer isso sempre que iniciar um arquivo .css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  /* cria um espaço entre cada item */
+    align-items: center;
+}
+
+.text-box {
+    width: 600px;
+    z-index: 2;
+}
+
+.img-box {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #017143;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+}
+
+.big-cup {
+    width: 340px;
+    z-index: 2;
+}
+
+.small-cup {
+    width: 60px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.small-cup:hover {
+    transform: translateY(-35px);
+}
+
+.circle {
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+}
