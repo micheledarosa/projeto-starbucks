@@ -103,6 +103,11 @@ img {
         padding: 20px; 
     }
 
+    button {
+        background-color: white;
+        color: black;
+    }
+
     .content {
         flex-direction: column;  
         text-align: center;
@@ -111,7 +116,6 @@ img {
     .menu {
         display: flex;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -130,6 +134,7 @@ img {
     }
 
     span {
-        font-size: 50px;  
+        font-size: 50px;
+        color: black;  
     }
 }
