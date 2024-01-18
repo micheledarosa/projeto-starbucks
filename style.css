@@ -92,3 +92,44 @@ button {
     left: 0;
     clip-path: circle(600px at right 800px);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px; 
+    }
+
+    .content {
+        flex-direction: column;  
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-box,
+    .img-box {
+        width: 100%;  
+    }
+
+    .img-box {
+        margin-top: 20px; 
+        justify-content: center;  
+    }
+
+    h2 {
+        font-size: 40px;  
+    }
+
+    span {
+        font-size: 50px;  
+    }
+}
